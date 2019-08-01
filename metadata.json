@@ -1,0 +1,44 @@
+{
+  "name": "jbouse-sks",
+  "version": "0.1.5",
+  "summary": "Synchronizing Key Server (SKS) Puppet module",
+  "author": "jbouse",
+  "description": "Configure and manage the Synchronizing Key Server (SKS)",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "ff8c3d39be615f4159a6b8c4361e5974",
+    "CONTRIBUTING.md": "ec539f7912da25760720eebf9756ae65",
+    "CONTRIBUTORS": "cfc2fcac1a8a6039853b00e6f44fa54d",
+    "Gemfile": "6e2160cfbc0d0777cf5a93fe23024900",
+    "Gemfile.lock": "5abbb7e8972b41bbe92694b15be8334e",
+    "Guardfile": "d223f7136d714f52e309fc0c5f54205d",
+    "LICENSE": "47bbee59c4c1cb14cc3667035a227be0",
+    "Modulefile": "a1422a531af94cd5e8df7d10cd93ee52",
+    "README.markdown": "d8f7c5ecdce5be83405a11f7946448fb",
+    "Rakefile": "08cf234d01467acc67062d3853d70bcd",
+    "manifests/config.pp": "e6f2ff37f9d9f741bd22dbab85e856bd",
+    "manifests/init.pp": "26ae0ee799cb2e8145c1ed138b4e288d",
+    "manifests/install.pp": "5096202d2c1ddea9cfca27dc30070772",
+    "manifests/params.pp": "b39a78fae0dbefefe630a675a52fde85",
+    "manifests/service.pp": "52bded98ec4e4680090a9df1e6fa6c45",
+    "spec/acceptance/class_spec.rb": "9690b01b83a5958614ad7f7033be7acc",
+    "spec/acceptance/nodesets/centos-64-x64.yml": "7ad72bad9087a52f30c6f7d5600b68dd",
+    "spec/acceptance/nodesets/default.yml": "1091bb0897dc8ee94a391ab1d8e45132",
+    "spec/acceptance/nodesets/ubuntu-server-12042-x64.yml": "1091bb0897dc8ee94a391ab1d8e45132",
+    "spec/classes/coverage_spec.rb": "5b6dfa0dd426aca0ccfae23c0a629f0b",
+    "spec/classes/sks_spec.rb": "699a3ae63b428bd5703a349a58458a05",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "spec/spec_helper_acceptance.rb": "144641bad1e01a07e476703cee0f7e88",
+    "templates/membership.erb": "3d7bbaa61e91950baf6ecd47a6ba2a8a",
+    "templates/sksconf.erb": "74654425c9c2e88da5ba972dad20ed26",
+    "tests/init.pp": "4240a700c65a8a8c5687d7c0a427562b"
+  },
+  "source": "git@github.com:UGNS/puppet-sks.git",
+  "project_page": "https://github.com/UGNS/puppet-sks",
+  "license": "Apache License, Version 2.0"
+}

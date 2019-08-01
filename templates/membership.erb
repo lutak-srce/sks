@@ -1,0 +1,29 @@
+##########################################################################
+#                                                                        #
+# This file is centrally managed, any manual changes will be OVERWRITTEN #
+#                                                                        #
+##########################################################################
+# /etc/sks/membership
+#
+# With SKS, two hosts can efficiently compare their databases then
+# repair whatever differences are found.  In order to set up
+# reconciliation, you first need to find other SKS servers that will
+# agree to gossip with you. The hostname and port of the server that
+# has agreed to do so should be added to this file.
+#
+# Empty lines and whitespace-only lines are ignored, as are lines
+# whose first non-whitespace character is a `#'.
+#
+# Example:
+# keyserver.linux.it 11370
+<%- if @members and ! @members.empty? -%>
+<%-   [@members].flatten.compact.each do |member| -%>
+
+<%= member['hostname'] %> <% if member['port'] -%><%= member['port'] %><%- else -%><%= @recon_port %><% end %>
+<%-     if member['admin'] or member['email'] or member['keyid'] -%>
+#<%-      if member['admin'] -%> <%= member['admin'] %><%- end -%>
+<%-       if member['email'] -%> <<%= member['email'] %>><%- end -%>
+<%-       if member['keyid'] -%> <%= member['keyid'] %><%- end %>
+<%-     end -%>
+<%-   end -%>
+<%- end -%>
