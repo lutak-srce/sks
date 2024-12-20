@@ -61,8 +61,8 @@
 #
 class sks (
   $version                    = present,
-  $hostname                   = $::fqdn,
-  $nodename                   = $::hostname,
+  $hostname                   = $facts['networking']['fqdn'],
+  $nodename                   = $facts['networking']['hostname'],
   $server_contact             = undef,
   $recon_address              = undef,
   $recon_port                 = 11370,
