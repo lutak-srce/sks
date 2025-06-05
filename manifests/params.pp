@@ -4,7 +4,7 @@
 # It sets variables according to platform
 #
 class sks::params {
-  case $::osfamily {
+  case $facts['os']['family'] {
     'Debian': {
       $package_name = 'sks'
       $service_name = 'sks'
@@ -14,7 +14,7 @@ class sks::params {
       $service_name = 'sks'
     }
     default: {
-      fail("${::operatingsystem} not supported")
+      fail("${facts['os']['name']} not supported")
     }
   }
 }
